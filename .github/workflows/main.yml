@@ -12,10 +12,10 @@ jobs:
       - uses: actions/checkout@main
       - name: Create .env
         run: |
-          echo 'DATABASE_NAME=${{ secrets.DB_NAME }}' >> .env
-          echo 'DATABASE_USER=${{ secrets.DB_USER }}' >> .env
-          echo 'DATABASE_PASSWORD=${{ secrets.DB_PASSWORD }}' >> .env
-          echo 'DATABASE_ROOT_PASSWORD=${{ secrets.DB_ROOT_PASSWORD }}' >> .env
+          echo 'DB_NAME=${{ secrets.DB_NAME }}' >> .env
+          echo 'DB_USER=${{ secrets.DB_USER }}' >> .env
+          echo 'DB_PASSWORD=${{ secrets.DB_PASSWORD }}' >> .env
+          echo 'DB_ROOT_PASSWORD=${{ secrets.DB_ROOT_PASSWORD }}' >> .env
 
 
       - name: Build Docker
